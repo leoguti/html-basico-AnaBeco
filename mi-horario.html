@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Horario de Clases</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .info {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background-color: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #eee;
+            font-weight: 500;
+        }
+        
+        tr:hover {
+            background-color: #f8f8f8;
+        }
+        
+        /* Colores por materia */
+        .matematicas { background-color: #FFE5B4; }
+        .español { background-color: #FFB6C1; }
+        .ingles { background-color: #ADD8E6; }
+        .ciencias { background-color: #B4E7B4; }
+        .educacion-fisica { background-color: #E6B4FF; }
+        .sociales { background-color: #FFFACD; }
+        .tecnologia { background-color: #87CEEB; }
+        .descanso { background-color: #FFD700; }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        .volver {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        
+        .volver:hover {
+            background-color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Mi Horario de Clases</h1>
+        <div class="info">
+            <p><strong>Ana María</strong></p>
+            <p>Colegio Salesiano de Duitama, Boyacá</p>
+        </div>
+        
+        <table border="1">
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td><strong>7:00 - 8:00</strong></td>
+                <td class="matematicas">Matemáticas</td>
+                <td class="español">Español</td>
+                <td class="ingles">Inglés</td>
+                <td class="ciencias">Ciencias</td>
+                <td class="educacion-fisica">Educación Física</td>
+            </tr>
+            <tr>
+                <td><strong>8:00 - 9:00</strong></td>
+                <td class="español">Español</td>
+                <td class="ingles">Inglés</td>
+                <td class="ciencias">Ciencias</td>
+                <td class="educacion-fisica">Educación Física</td>
+                <td class="sociales">Sociales</td>
+            </tr>
+            <tr>
+                <td><strong>9:00 - 10:00</strong></td>
+                <td class="ingles">Inglés</td>
+                <td class="ciencias">Ciencias</td>
+                <td class="educacion-fisica">Educación Física</td>
+                <td class="sociales">Sociales</td>
+                <td class="tecnologia">Tecnología</td>
+            </tr>
+            <tr>
+                <td><strong>10:00 - 11:00</strong></td>
+                <td class="descanso">☕ DESCANSO</td>
+                <td class="descanso">☕ DESCANSO</td>
+                <td class="descanso">☕ DESCANSO</td>
+                <td class="descanso">☕ DESCANSO</td>
+                <td class="descanso">☕ DESCANSO</td>
+            </tr>
+            <tr>
+                <td><strong>11:00 - 12:00</strong></td>
+                <td class="ciencias">Ciencias</td>
+                <td class="educacion-fisica">Educación Física</td>
+                <td class="sociales">Sociales</td>
+                <td class="tecnologia">Tecnología</td>
+                <td class="matematicas">Matemáticas</td>
+            </tr>
+            <tr>
+                <td><strong>12:00 - 1:00</strong></td>
+                <td class="tecnologia">Tecnología</td>
+                <td class="matematicas">Matemáticas</td>
+                <td class="tecnologia">Tecnología</td>
+                <td class="matematicas">Matemáticas</td>
+                <td class="español">Español</td>
+            </tr>
+        </table>
+        
+        <a href="mi-pagina.html" class="volver">← Volver a mi página</a>
+        
+        <footer>
+            <p><em>Hecho con HTML + Copilot | Escuela OSM Salesiano 2026</em></p>
+        </footer>
+    </div>
+</body>
+</html>
