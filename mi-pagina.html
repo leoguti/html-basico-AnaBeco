@@ -2,61 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Primera Página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página</title>
 </head>
 <body>
-    <h1>Hola, soy Ana María</h1>
-    <p>Esta es mi primera página web. La hice yo desde cero.</p>
-
-    <h2>Sobre mí</h2>
-    <p>Estudio en el <strong>Colegio Salesiano</strong> de Duitama, Boyacá.</p>
-
-    <h2>Mis cosas favoritas</h2>
-    <ul>
-        <li>Mi comida favorita: Pasta</li>
-        <li>Mi materia favorita: Descanso</li>
-        <li>Mi lugar favorito de Duitama: Mi casa</li>
-    </ul>
-
-    <h2>Enlaces</h2>
-    <p>Mira el mapa que hicimos juntos:</p>
-    <a href="https://leoguti.github.io/mapa-salesiano/">Mapa del Salesiano</a>
-    <ul>
-        <li><a href="mi-horario.html">Mi horario de clases</a></li>
-    </ul>
-
-    <h2>Mi lugar favorito</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Duitama_Boyac%C3%A1.jpg/640px-Duitama_Boyac%C3%A1.jpg" alt="Duitama" width="400">
-    <p>Duitama, mi ciudad.</p>
-
-    <h3>Un título más pequeño</h3>
-    <em>Este texto sale en cursiva</em>
-    <hr>
-
-    <h2>Mi horario de clases</h2>
-    <table border="1">
-        <tr>
-            <th>Día</th>
-            <th>Materia</th>
-            <th>Hora</th>
-        </tr>
-        <tr>
-            <td>Lunes</td>
-            <td>Matemáticas</td>
-            <td>8:00 - 9:00</td>
-        </tr>
-        <tr>
-            <td>Martes</td>
-            <td>Español</td>
-            <td>9:00 - 10:00</td>
-        </tr>
-        <tr>
-            <td>Miércoles</td>
-            <td>Inglés</td>
-            <td>10:00 - 11:00</td>
-        </tr>
-    </table>
-
-    <p><em>Hecho con HTML puro - Escuela OSM + Vibe Coding 2026</em></p>
+    <header>
+        <h1>Bienvenido a mi Página!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre mí</h2>
+            <p>Soy un apasionado de la programación y el diseño web.</p>
+        </section>
+        <section>
+            <h2>Proyectos</h2>
+            <ul>
+                <li>Proyecto 1</li>
+                <li>Proyecto 2</li>
+                <li>Proyecto 3</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Ana Beco</p>
+    </footer>
 </body>
 </html>
+
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background: linear-gradient(45deg, #6ab04c, #f9ca24);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
